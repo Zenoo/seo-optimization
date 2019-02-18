@@ -9,7 +9,7 @@ Here are some tips to optimize your website for SEO:
 * [Loading time](#loading-time)
 	- [Convert your images to `.webp`](#convert-your-images-to-webp)
 	- [Delay Javascript non-necessary loading](#delay-javascript-non-necessary-loading)
-	- [Delay CSS non-necessary loading](#delay-css-non-necessary-loading)
+	- [Load CSS without blocking render](#load-css-without-blocking-render)
 
 ## Useful files
 
