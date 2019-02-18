@@ -5,6 +5,7 @@ Here are some tips to optimize your website for SEO:
 * [Useful files](#useful-files)
 	- [robots.txt](#robotstxt)
 	- [sitemap.xml](#sitemapxml)
+* [Error page](#error-page)
 * [Loading time](#loading-time)
 	- [Convert your images to `.webp`](#convert-your-images-to-webp)
 
@@ -57,6 +58,19 @@ The `<changefreq>` tag accepts to following values: **always**, **hourly**, **da
 
 The `<priority>` tag value ranges from `0.0` to `1.0`. Its default value if `0.5`.  
 It lets search engines know which pages are the most important on your website *(the higher the most important)*.
+
+## Error page
+
+Whenever a page is removed or a user types an URL wrong, it's better to show him a specific error page instead of the default one.  
+This page should retain the global aspect of your website and redirect the user to other pages related to his search, in order to keep the user invested.
+
+Creating a `404.html` file and adding
+
+```
+ErrorDocument 404 /404.html
+```
+
+To your `.htaccess` will do the trick just fine.
 
 ## Loading time
 
