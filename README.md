@@ -8,6 +8,8 @@ Here are some tips to optimize your website for SEO:
 * [Error page](#error-page)
 * [Loading time](#loading-time)
 	- [Convert your images to `.webp`](#convert-your-images-to-webp)
+	- [Delay Javascript non-necessary loading](#delay-javascript-non-necessary-loading)
+	- [Delay CSS non-necessary loading](#delay-css-non-necessary-loading)
 
 ## Useful files
 
@@ -95,6 +97,36 @@ Then, all you have to do is replace your basic `<img src="logo.png" alt="Logo" c
 ```
 
 The browser will first try to load `logo.webp`, if it can't, it will load `logo.png`. If the browser doesn't support the `<picture>` & `<source>` tags, it will default to the `<img>` tag.
+
+### Delay Javascript non-necessary loading
+
+You should try to load as little ressources as possible before the body of your page. The less time your page spends on loading Javascript, the more search engines will have to look at your website.
+
+1. Use the `async` attribute: `<script src="..." async></script>`
+2. Place your Javascript code at the end of your `<body>` tag.
+
+### Load CSS without blocking render
+
+Same as the Javascript, you should also deer as many CSS files as you can *(without impacting your page layout, though)*.
+
+The trick here is to load the CSS without blocking the rest of the page.  
+Replace your old CSS imports with:
+
+```HTML
+<link
+  rel="stylesheet"
+  href="css/yourcss.min.css" 
+  media="none" 
+  onload="if(media!='all')media='all'"
+>
+<noscript>
+  <link rel="stylesheet" href="css/yourcss.min.css">
+</noscript>
+```
+
+First, the `media` attribute of your `<link>` tags is set to `none`, which prevents the browser to load the CSS file.  
+The `onload` attribute will set the `media` attribute back to `all`, triggering the loading of the file after the tag has been loaded, so the browser has moved on to render something else.  
+If Javascript isn't enabled, the `<noscript>` tag imports your CSS file the usual way, ignoring the above statement.
 
 ## Authors
 
