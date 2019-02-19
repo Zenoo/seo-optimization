@@ -10,6 +10,9 @@ Here are some tips to optimize your website for SEO:
 	- [Convert your images to `.webp`](#convert-your-images-to-webp)
 	- [Delay Javascript non-necessary loading](#delay-javascript-non-necessary-loading)
 	- [Load CSS without blocking render](#load-css-without-blocking-render)
+* [Mobile version](#mobile-version)
+* [Structured Data](#structured-data)
+* [Online analyzers](#online-analyzers)
 
 ## Useful files
 
@@ -127,6 +130,45 @@ Replace your old CSS imports with:
 First, the `media` attribute of your `<link>` tags is set to `none`, which prevents the browser to load the CSS file.  
 The `onload` attribute will set the `media` attribute back to `all`, triggering the loading of the file after the tag has been loaded, so the browser has moved on to render something else.  
 If Javascript isn't enabled, the `<noscript>` tag imports your CSS file the usual way, ignoring the above statement.
+
+## Mobile version
+
+Make sure your website is adapted for every device out there. Keep in mind that more than 50% of users are visiting your website from a mobile device.  
+Google now uses a mobile-based index, so having a functionnal mobile version is more important than ever.
+
+## Strucutred Data
+
+Including Structured Data on every page of your website will allow Google to display your pages in a better way. See [Intro to Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) for more informations.
+
+Here is a basic example of what a Breadcrumb Structured Data script will look like in your HTML: 
+
+```HTML
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+        "@id": "https://your.website.com/",
+        "name": "Home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+        "@id": "https://your.website.com/whatever",
+        "name": "Whatever"
+        }
+    }]
+    }
+</script>
+```
+
+## Online analyzers
+
+- [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 
 ## Authors
 
