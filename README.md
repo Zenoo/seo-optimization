@@ -17,6 +17,8 @@ Here are some tips to optimize your website for SEO:
 >	- [URL](#url)
 >	- [Title](#title)
 >	- [Description](#description)
+>	- [Keywords](#keywords)
+>	- [Hierarchy](#hierarchy)
 >	- [Content](#content)
 >* [Online analyzers](#online-analyzers)
 
@@ -191,6 +193,7 @@ It should be:
 - Less than 65 characters long
 - Avoid UNNECESSARY UPPERCASE
 - Describe your page content.
+- Contain a main keyword
 
 ### Description
 
@@ -198,8 +201,47 @@ Every page of your website should have a `<meta name="description" content="..."
 THis is what most search engines will display below the title of your website and its URL.   
 It should be:
 - **Unique**
-- Less than 250 characters long
+- Less than 150 characters long
 - Describe your page content.
+
+### Keywords
+
+The `<meta name="keywords" content="...">` tag is no longer neede for SEO.  
+If anything, it gives your competitors an easy way to target your own keywords, so **don't use it**.
+
+### Hierarchy
+
+Your pages should have a well-structured hierarchy, using title tags:
+
+```HTML
+<!-- BAD -->
+<h2>...</h2>
+  <h1>...</h1>
+  <h4>...</h4>
+    <h3>...</h3>
+
+<!-- GOOD -->
+<h1>...</h1>
+  <h2>...</h2>
+    <h3>...</h3>
+    <h3>...</h3>
+  <h2>...</h2>
+    <h3>...</h3>
+    <h3>...</h3>
+```
+
+The `<h1>` title is the most important of all, as it is used by search engines to classify your pages the same way your `<title>` tag is.
+
+### Content
+
+Each page of your website should:
+
+- Contain at least 200 words directly visible without needing to scroll down *(don't forget to use many keywords for search purposes)*
+- Contain around 1900 words total
+- Not be a duplicate from anywhere else, inside or outside of your website.
+- Contain a large set of predefined keywords *(Define your keywords around your website main purpose)*
+
+See [Google Keyword Planner](https://adwords.google.com/KeywordPlanner)
 
 ## Online analyzers
 
