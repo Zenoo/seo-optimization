@@ -12,6 +12,11 @@ Here are some tips to optimize your website for SEO:
 	- [Load CSS without blocking render](#load-css-without-blocking-render)
 * [Mobile version](#mobile-version)
 * [Structured Data](#structured-data)
+* [Website semantic](#website-semantic)
+	- [URL](#url)
+	- [Title](#title)
+	- [Description](#description)
+	- [Content](#content)
 * [Online analyzers](#online-analyzers)
 
 ## Useful files
@@ -136,7 +141,7 @@ If Javascript isn't enabled, the `<noscript>` tag imports your CSS file the usua
 Make sure your website is adapted for every device out there. Keep in mind that more than 50% of users are visiting your website from a mobile device.  
 Google now uses a mobile-based index, so having a functionnal mobile version is more important than ever.
 
-## Strucutred Data
+## Structured Data
 
 Including Structured Data on every page of your website will allow Google to display your pages in a better way. See [Intro to Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data) for more informations.
 
@@ -165,6 +170,35 @@ Here is a basic example of what a Breadcrumb Structured Data script will look li
     }
 </script>
 ```
+
+## Website semantic
+
+### URL
+
+URLs should be:
+
+- No longer than 115 characters
+- At most 4 level deep *(website.com/I/am/way/too/deep)*
+- Clean, without URL parameters or non ASCII characters
+- Accessible via HTTPS *([Let's Encrypt](https://letsencrypt.org/) offers free certificates)*
+
+### Title
+
+Every page of your website should have a `<title>` tag.  
+It should be:
+- **Unique**
+- Less than 65 characters long
+- Avoid UNNECESSARY UPPERCASE
+- Describe your page content.
+
+### Description
+
+Every page of your website should have a `<meta name="description" content="...">` tag. 
+THis is what most search engines will display below the title of your website and its URL.   
+It should be:
+- **Unique**
+- Less than 250 characters long
+- Describe your page content.
 
 ## Online analyzers
 
