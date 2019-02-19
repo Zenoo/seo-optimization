@@ -20,6 +20,7 @@ Here are some tips to optimize your website for SEO:
 >	- [Keywords](#keywords)
 >	- [Hierarchy](#hierarchy)
 >	- [Content](#content)
+>	- [Image `alt` attribute](#image-alt-attribute)
 >* [Online analyzers](#online-analyzers)
 
 ## Useful files
@@ -243,9 +244,16 @@ Each page of your website should:
 
 See [Google Keyword Planner](https://adwords.google.com/KeywordPlanner)
 
+### Image `alt` attribute
+
+Don't forget to fill the `alt` attribute of every image on your website.  
+This is the text that will be displayed in case the image is unavailable and search engines use this a lot to categorize your content.  
+It is also useful for screen readers.
+
 ## Online analyzers
 
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+- [Seoptimer](https://www.seoptimer.com/)
 
 ## Authors
 
