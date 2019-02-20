@@ -21,6 +21,7 @@ Here are some tips to optimize your website for SEO:
 >	- [Hierarchy](#hierarchy)
 >	- [Content](#content)
 >	- [Image `alt` attribute](#image-alt-attribute)
+>* [Google Analytics](#google-analytics)
 >* [Online analyzers](#online-analyzers)
 
 ## Useful files
@@ -249,6 +250,11 @@ See [Google Keyword Planner](https://adwords.google.com/KeywordPlanner)
 Don't forget to fill the `alt` attribute of every image on your website.  
 This is the text that will be displayed in case the image is unavailable and search engines use this a lot to categorize your content.  
 It is also useful for screen readers.
+
+## Google Analytics
+
+[Google Analytics](https://analytics.google.com) is a great way to monitor your website progression and traffic.  
+Generate your own Google Analytics ID and insert the `<script>` tag Google generated for you at the top of the `<head>` tag of every page of your website.
 
 ## Online analyzers
 
