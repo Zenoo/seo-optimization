@@ -97,7 +97,7 @@ I recommend using [WebPConv](http://www.romeolight.com/products/webpconv/) to co
 It's easy to use and requires no further configuration.  
 The converted files can be found on your Desktop.
 
-I suggest creating a `webp/` folder containing every converted source in your `image` folder, which retain the file tree of your original folder.
+I suggest creating a `webp/` folder containing every converted source in your `image` folder, which retains the file tree of your original folder.
 
 Then, all you have to do is replace your basic `<img src="logo.png" alt="Logo" class="whatev">` with:
 
@@ -120,7 +120,7 @@ You should try to load as little ressources as possible before the body of your 
 
 ### Load CSS without blocking render
 
-Same as the Javascript, you should also deer as many CSS files as you can *(without impacting your page layout, though)*.
+Same as the Javascript, you should also defer as many CSS files as you can *(without impacting your page layout, though)*.
 
 The trick here is to load the CSS without blocking the rest of the page.  
 Replace your old CSS imports with:
